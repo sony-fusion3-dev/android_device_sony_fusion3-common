@@ -27,7 +27,7 @@ on init
     symlink /sdcard /storage/sdcard0
 
 on fs
-    mount_all ./fstab.qcom --early
+    mount_all /vendor/etc/fstab.qcom --early
 
     restorecon /data/misc/audio/mbhc.bin
     restorecon /data/misc/audio/wcd9310_anc.bin
@@ -47,7 +47,7 @@ on late-fs
     start bootanim
     start vendor.gralloc-2-0
 
-    mount_all ./fstab.qcom --late
+    mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs
     # Allow writing to the kernel trace log.
