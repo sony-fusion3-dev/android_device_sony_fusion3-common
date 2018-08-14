@@ -48,6 +48,7 @@ static inline const char* getBTDefaultName()
 
 #define BTA_DISABLE_DELAY 1000
 #define SC_MODE_INCLUDED FALSE
+#define BLE_VND_INCLUDED FALSE
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 
