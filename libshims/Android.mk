@@ -9,7 +9,6 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
-    external/safe-iop/include \
     system/core/libutils
 
 LOCAL_SHARED_LIBRARIES := \
@@ -36,7 +35,6 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
-    external/safe-iop/include \
     system/core/libutils
 
 LOCAL_SHARED_LIBRARIES := \
