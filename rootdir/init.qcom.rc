@@ -24,8 +24,6 @@ on early-init
 on init
     symlink /dev/socket /tmp
 
-    symlink /sdcard /storage/sdcard0
-
 on fs
     mount_all /vendor/etc/fstab.qcom --early
 
