@@ -20,6 +20,9 @@ COMMON_PATH := device/sony/fusion3-common
 # Common specific overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+
 # Common radio specific elements
 ifneq ($(BOARD_HAVE_RADIO),false)
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/radio/overlay
