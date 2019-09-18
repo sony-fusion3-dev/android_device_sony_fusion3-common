@@ -29,7 +29,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    symbols/GraphicBuffer.cpp \
+    symbols/GraphicBufferMapper.cpp \
     utils/Looper.cpp \
     utils/VectorImpl.cpp
 
