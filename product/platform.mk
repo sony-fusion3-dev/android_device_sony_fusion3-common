@@ -7,8 +7,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Sony TrimArea package
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/bin/tad_static:system/bin/tad_static
+PRODUCT_PACKAGES += \
+    tad_static
 
 # Sony MACAddrSetup package
 PRODUCT_PACKAGES += \
