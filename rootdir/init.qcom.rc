@@ -334,6 +334,7 @@ service charger /system/bin/charger
     class charger
     user root
     group root radio system
+    capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
 on property:ro.boot.baseband=mdm
