@@ -15,7 +15,6 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libcamera_client \
     libgui \
-    libhidltransport \
     libsensor \
     libutils \
     android.hidl.token@1.0-utils

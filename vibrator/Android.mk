@@ -26,9 +26,7 @@ LOCAL_SRC_FILES := service.cpp Vibrator.cpp
 LOCAL_SHARED_LIBRARIES := \
     android.hardware.vibrator@1.0 \
     libhidlbase \
-    libhidltransport \
     liblog \
-    libhwbinder \
     libutils \
     libhardware
 
