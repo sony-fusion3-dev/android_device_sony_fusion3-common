@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-import init.device.rc
-import init.qcom.power.rc
-import init.sony.usb.rc
+import /vendor/etc/init/hw/init.device.rc
+import /vendor/etc/init/hw/init.qcom.power.rc
+import /vendor/etc/init/hw/init.sony.usb.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
