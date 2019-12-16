@@ -7,3 +7,7 @@ PRODUCT_COPY_FILES += \
 # Media properties
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0
+
+# OMX
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
