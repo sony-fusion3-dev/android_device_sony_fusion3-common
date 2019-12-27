@@ -30,6 +30,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
     symbols/GraphicBufferMapper.cpp \
+    symbols/SurfaceComposer.cpp \
     utils/Looper.cpp \
     utils/VectorImpl.cpp
 
@@ -39,6 +40,7 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_SHARED_LIBRARIES := \
     libbase \
+    libgui \
     libui \
     libutils \
     liblog \
