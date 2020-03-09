@@ -1,3 +1,5 @@
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
