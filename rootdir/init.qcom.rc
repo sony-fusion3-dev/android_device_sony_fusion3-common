@@ -268,7 +268,7 @@ service netmgrd /system/bin/netmgrd
     group radio system wakelock
     disabled
 
-service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
+service vendor.fm /system/bin/sh /system/etc/init.qcom.fm.sh
     class late_start
     user system
     group system
