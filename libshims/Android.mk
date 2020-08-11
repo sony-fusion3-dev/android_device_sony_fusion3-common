@@ -30,6 +30,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
     symbols/GraphicBufferMapper.cpp \
+    symbols/Permissions.cpp \
     symbols/SurfaceComposer.cpp \
     utils/Looper.cpp \
     utils/VectorImpl.cpp
