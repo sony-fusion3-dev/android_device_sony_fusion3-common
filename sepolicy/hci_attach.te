@@ -6,7 +6,6 @@ init_daemon_domain(hci_attach)
 qmux_socket(hci_attach)
 
 set_prop(hci_attach, bluetooth_prop)
-set_prop(hci_attach, vendor_bluetooth_prop)
 set_prop(hci_attach, wifi_prop)
 
 #============= hci_attach ==============
