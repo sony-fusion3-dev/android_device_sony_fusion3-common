@@ -160,4 +160,7 @@
         <item>"/system/framework/arm/boot-core-libart.oat"</item>
         <item>"/system/framework/boot-core-libart.vdex"</item>
     </string-array>
+
+    <!-- Whether device supports wifi ap mac randomization -->
+    <bool name="config_wifi_ap_randomization_supported">false</bool>
 </resources>
