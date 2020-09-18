@@ -1,3 +1,10 @@
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 16
 
