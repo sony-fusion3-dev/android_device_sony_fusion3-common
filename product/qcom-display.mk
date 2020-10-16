@@ -1,3 +1,7 @@
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service
+
 # Display packages
 PRODUCT_PACKAGES += \
     libgenlock \
