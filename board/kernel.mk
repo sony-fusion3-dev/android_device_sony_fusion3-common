@@ -5,6 +5,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x3F ehci-hcd.p
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
+# Memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Serial console
 BOARD_ENABLE_SERIAL_CONSOLE := false
 ifeq ($(BOARD_ENABLE_SERIAL_CONSOLE),true)
