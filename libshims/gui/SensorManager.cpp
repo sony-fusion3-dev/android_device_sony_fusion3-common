@@ -37,7 +37,7 @@
 namespace android {
 // ----------------------------------------------------------------------------
 
-static String16 gPackageName = String16("packageName");
+static String16 gPackageName = String16("android");
 
 ANDROID_SINGLETON_STATIC_INSTANCE(SensorManager)
 
