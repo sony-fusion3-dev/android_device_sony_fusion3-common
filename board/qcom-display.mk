@@ -1,5 +1,6 @@
 # Display
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Adreno driver
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
