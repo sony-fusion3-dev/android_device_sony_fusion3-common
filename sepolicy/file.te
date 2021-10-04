@@ -9,6 +9,7 @@ type sysfs_i2c_name, fs_type, sysfs_type;
 type sysfs_input_devices, fs_type, sysfs_type;
 type sysfs_input_name, fs_type, sysfs_type;
 type sysfs_mac_serial, fs_type, sysfs_type;
+type sysfs_mac_address, fs_type, sysfs_type;
 type sysfs_mhl, fs_type, sysfs_type;
 type sysfs_power_control, fs_type, sysfs_type;
 type sysfs_proximity_sensor, sysfs_type, fs_type;
