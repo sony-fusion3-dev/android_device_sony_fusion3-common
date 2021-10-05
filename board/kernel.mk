@@ -16,7 +16,3 @@ endif
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/apq8064
-
-# Custom boot
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/boot/custombootimg.mk
