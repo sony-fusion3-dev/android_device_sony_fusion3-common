@@ -9,7 +9,7 @@ BOARD_VENDOR_PLATFORM := fusion3
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/mediaserver=22 \
-    /system/vendor/bin/hw/android.hardware.sensors@1.0-service=22
+    /system/vendor/bin/hw/android.hardware.sensors@1.0-service.fusion3=22
 
 # Dumpstate
 BOARD_LIB_DUMPSTATE := libdumpstate.sony

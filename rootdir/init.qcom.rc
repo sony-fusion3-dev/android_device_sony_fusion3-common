@@ -348,13 +348,5 @@ on property:ro.boot.baseband=apq
     setprop ro.radio.noril yes
     stop ril-daemon
 
-# Override sensors HAL service
-service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
-    class hal
-    user system
-    group system input wakelock
-    capabilities BLOCK_SUSPEND
-    rlimit rtprio 10 10
-
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
