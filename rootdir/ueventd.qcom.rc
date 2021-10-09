@@ -202,6 +202,17 @@ subsystem msm_camera
 /sys/devices/i2c-0/0-002c/backlight/lcd-* brightness            0660 system system
 /sys/devices/i2c-0/0-002c/backlight/lcd-* max_brightness        0660 system system
 
+# Camera flashlight
+/sys/devices/i2c-0/0-0053                 flash_current          0775  camera  camera
+/sys/devices/i2c-0/0-0053                 flash_duration         0775  camera  camera
+/sys/devices/i2c-0/0-0053                 flash_enable           0775  camera  camera
+/sys/devices/i2c-0/0-0053                 flash_synchronization  0775  camera  camera
+/sys/devices/i2c-0/0-0053                 privacy_current        0775  camera  camera
+/sys/devices/i2c-0/0-0053                 privacy_enable         0775  camera  camera
+/sys/devices/i2c-0/0-0053                 status                 0775  camera  camera
+/sys/devices/i2c-0/0-0053                 torch_current          0775  camera  camera
+/sys/devices/i2c-0/0-0053                 torch_enable           0775  camera  camera
+
 # BT
 /dev/hidraw*                                     0666  system  system
 
