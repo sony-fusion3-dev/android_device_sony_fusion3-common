@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,22 +17,13 @@
 #include <stdint.h>
 #include <utils/Errors.h>
 
-namespace android {
+namespace android
+{
+    /* status_t Parcel::writeString16 */
+    extern "C" status_t _ZN7android6Parcel13writeString16EPKDsj(const char16_t* str, size_t len);
 
-// ---------------------------------------------------------------------------
-
-extern "C" {
-
-    // C++11 Parcel::writeString16(const char16_t* str, size_t len)
-    status_t _ZN7android6Parcel13writeString16EPKDsj(const char16_t* str, size_t len);
-
-    // Old signature with typedef uint16_t
-    status_t _ZN7android6Parcel13writeString16EPKtj(const char16_t* str, size_t len)
+    extern "C" status_t _ZN7android6Parcel13writeString16EPKtj(const char16_t* str, size_t len)
     {
         return _ZN7android6Parcel13writeString16EPKDsj(str, len);
     }
-}
-
-// ---------------------------------------------------------------------------
-
-}; // namespace android
+};
