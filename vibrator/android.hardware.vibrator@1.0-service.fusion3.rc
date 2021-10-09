@@ -1,3 +1,7 @@
+on init
+    chown system system /sys/class/timed_output/vibrator/level
+    chmod 644 /sys/class/timed_output/vibrator/level
+
 service vibrator-1-0 /vendor/bin/hw/android.hardware.vibrator@1.0-service.fusion3
     class hal
     user system
