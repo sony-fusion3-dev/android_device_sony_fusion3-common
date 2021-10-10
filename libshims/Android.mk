@@ -91,6 +91,27 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
+LOCAL_SRC_FILES := \
+    utils/VectorImpl.cpp
+
+LOCAL_C_INCLUDES := \
+    $(LOCAL_PATH)/include \
+    external/safe-iop/include \
+    system/core/libutils
+
+LOCAL_SHARED_LIBRARIES := \
+    liblog \
+    libutils
+
+LOCAL_MODULE := libshim_MPU3050
+
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
 LOCAL_SRC_FILES := libaudioclient_shim.cpp
 LOCAL_MODULE := libaudioclient_shim
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
