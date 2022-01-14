@@ -4,4 +4,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     persist.sys.wfd.virtual=0 \
     debug.hwui.use_buffer_age=false \
-    debug.renderengine.backend=threaded
+    debug.renderengine.backend=gles
