@@ -3,4 +3,5 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.sony.usb.rc
+    init.sony.usb.rc \
+    toybox_init
