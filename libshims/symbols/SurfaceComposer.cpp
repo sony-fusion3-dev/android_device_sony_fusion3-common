@@ -24,12 +24,4 @@ namespace android
     {
         return _ZN7android21SurfaceComposerClient23getInternalDisplayTokenEv();
     }
-
-    extern "C" void _ZN7android21SurfaceComposerClient14getDisplayInfoERKNS_2spINS_7IBinderEEEPNS_11DisplayInfoE(void) {}
-
-    extern "C" void _ZN7android14SurfaceControl10getSurfaceEv(void);
-
-    extern "C" void _ZNK7android14SurfaceControl10getSurfaceEv(void) {
-      _ZN7android14SurfaceControl10getSurfaceEv();
-    }
 };
