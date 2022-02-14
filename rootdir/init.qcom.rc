@@ -254,7 +254,7 @@ service hci_attach /system/bin/sh /system/etc/init.qcom.bt.sh
     group bluetooth system
     disabled
     oneshot
-    seclabel u:r:hci_attach:s0
+    #seclabel u:r:hci_attach:s0
 
 on property:bluetooth.hciattach=true
     start hci_attach
@@ -279,7 +279,7 @@ service vendor.fm /system/bin/sh /system/etc/init.qcom.fm.sh
     group system
     disabled
     oneshot
-    seclabel u:r:fm_dl:s0
+    #seclabel u:r:fm_dl:s0
 
 service mpdecision /system/bin/mpdecision --avg_comp
     class main
@@ -293,7 +293,7 @@ service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
     class core
     group system
     oneshot
-    seclabel u:r:kickstart:s0
+    #seclabel u:r:kickstart:s0
 
 service kickstart /system/bin/qcks l -r /data/tombstones/mdm/ -e /cache/qcks/
     class core
@@ -314,13 +314,13 @@ service tad_static /vendor/bin/tad_static /dev/block/platform/msm_sdcc.1/by-name
     user root
     group root readproc system
     socket tad stream 0660 system system
-    seclabel u:r:tad:s0
+    #seclabel u:r:tad:s0
 
 service ta_qmi_client /system/bin/ta_qmi_client
     class main
     user root
     group radio system wakelock
-    seclabel u:r:ta_qmi_client:s0
+    #seclabel u:r:ta_qmi_client:s0
 
 service updatemiscta /system/bin/updatemiscta
     class main
@@ -340,7 +340,7 @@ service charger /system/bin/charger
     user system
     group system graphics input
     capabilities SYS_BOOT
-    seclabel u:r:charger:s0
+    #seclabel u:r:charger:s0
 
 on property:ro.boot.baseband=mdm
     start qmuxd
