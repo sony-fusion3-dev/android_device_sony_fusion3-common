@@ -5,6 +5,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x3F ehci-hcd.p
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Memfd
 TARGET_HAS_MEMFD_BACKPORT := true
