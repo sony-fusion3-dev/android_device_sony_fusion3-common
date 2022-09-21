@@ -5,7 +5,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio packages
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.primary.msm8960 \
     audio.r_submix.default \
     audio.usb.default \
