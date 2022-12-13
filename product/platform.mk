@@ -1,9 +1,7 @@
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # Prebuilt Protobuf
 PRODUCT_COPY_FILES += \

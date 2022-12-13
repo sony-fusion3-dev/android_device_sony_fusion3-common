@@ -1,7 +1,7 @@
 # Camera packages
 PRODUCT_PACKAGES += \
     camera.qcom \
-    Snap
+    Aperture
 
 # Camera SHIM packages
 PRODUCT_PACKAGES += \

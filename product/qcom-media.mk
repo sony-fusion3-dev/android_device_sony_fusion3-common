@@ -14,7 +14,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libc2dcolorconvert \
-    libdivxdrmdecrypt \
     libmm-omxcore \
     libstagefrighthw
 

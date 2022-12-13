@@ -7,9 +7,7 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libmemalloc \
     liboverlay \
-    libqdutils \
-    libtilerenderer \
-    libI420colorconvert
+    libqdutils
 
 # Display QCOM packages
 PRODUCT_PACKAGES += \
