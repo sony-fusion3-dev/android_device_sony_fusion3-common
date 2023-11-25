@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudioclient_shim \
     libaudio-resampler \
+    libaudioroute \
     libqcomvoiceprocessing
 
 # Audio tools

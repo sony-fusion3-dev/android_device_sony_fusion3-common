@@ -6,6 +6,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX packages
 PRODUCT_PACKAGES += \
+    libminijail:32 \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
