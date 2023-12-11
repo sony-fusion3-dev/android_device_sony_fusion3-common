@@ -1,5 +1,6 @@
 # Display properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
     persist.debug.wfd.enable=1 \
     persist.hwc.mdpcomp.enable=true \
     persist.sys.wfd.virtual=0 \
