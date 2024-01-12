@@ -28,11 +28,14 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_SHARED_LIBRARIES := \
     libcutils \
-    libgui \
+    libgui_vendor \
     libbinder \
     libsensor \
     libutils \
     liblog
+
+LOCAL_HEADER_LIBRARIES := \
+    libandroid_sensor_headers
 
 LOCAL_MODULE := libshim_cald
 
@@ -56,16 +59,21 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
-    system/core/libutils
+    system/core/libutils \
+    frameworks/native/include
 
 LOCAL_SHARED_LIBRARIES := \
     libcutils \
-    libgui \
+    libgui_vendor \
     libhardware \
+    libsensor \
     liblog \
     libui \
     libsync \
     libutils
+
+LOCAL_HEADER_LIBRARIES := \
+    libandroid_sensor_headers
 
 LOCAL_MODULE := libshim_camera
 
