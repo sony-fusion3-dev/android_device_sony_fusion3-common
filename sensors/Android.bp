@@ -8,6 +8,7 @@ cc_library_static {
     shared_libs: [
         "liblog",
         "libcutils",
+        "libhardware",
         "libutils",
         "libdl",
     ],
