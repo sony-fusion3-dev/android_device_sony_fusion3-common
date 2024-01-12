@@ -29,6 +29,9 @@ LOCAL_CFLAGS += \
 
 LOCAL_LDFLAGS += -Wl,--export-dynamic
 
+LOCAL_C_INCLUDES:= \
+    hardware/libhardware/include
+
 LOCAL_HEADER_LIBRARIES := \
     libgps.utils_headers
 

@@ -15,6 +15,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
     libdl \
+    libhardware \
     liblog \
     libloc_core \
     libgps.utils \
@@ -42,6 +43,9 @@ LOCAL_CFLAGS += \
      -Wno-error \
      -Wno-unused-parameter
 
+LOCAL_C_INCLUDES:= \
+    hardware/libhardware/include
+
 LOCAL_HEADER_LIBRARIES := \
     libgps.utils_headers \
     libloc_core_headers \
@@ -62,6 +66,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
+    libhardware \
     liblog \
     libloc_eng \
     libloc_core \
